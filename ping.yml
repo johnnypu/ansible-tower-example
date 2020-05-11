@@ -1,0 +1,11 @@
+---
+- name: ping test
+  hosts: sshlocal
+  tasks:
+    - name: Start to ping
+      ping:
+      register: result
+
+    - name: Print result
+      debug: 
+        msg:  "ping result {{ result.ping }}"
