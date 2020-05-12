@@ -1,6 +1,6 @@
 ---
 - name: ping test
-  hosts: local
+  hosts: all
   tasks:
     - name: Start to ping
       ping:
